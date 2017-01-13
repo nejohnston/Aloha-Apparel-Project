@@ -268,7 +268,8 @@ input[type="text"] {
 
 input[type="submit"] {
     text-align: center;
-    background-color: #e2574c;
+    /*background-color: #e2574c;*/
+    background-color: magenta;
     color: white;
     position: absolute;
     padding: .1rem .75rem;
