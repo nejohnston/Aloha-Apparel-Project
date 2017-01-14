@@ -139,6 +139,10 @@ body, button, input, select, textarea {
     font-weight: normal;
     line-height: 2;
     border: 0;
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair', 'Raleway Light', sans-serif;
 }
 form {
     display: block;
@@ -150,12 +154,11 @@ footer, a {
     background-color: #242424;
     color: white
 }
-p {
-    font-style: italic;
-    text-align: center;
-    }
 section {
-    padding: 4rem 0;
+    padding: 1rem 0;
+}
+h2 {
+    font-size: 2rem;
 }
 header {
     margin-top: 1rem;
@@ -171,9 +174,8 @@ li{
 /*Classes*/
 
 .container {
-    padding: 0 0;
-    margin: 0 auto;
-    max-width: 480px;
+    padding: 2rem 0;
+    margin: 0 0;
     width: 100%;
 }
 
@@ -188,16 +190,24 @@ li{
 .banner {
     overflow: hidden;
     background: 
-    url(images/banner-girl.png) no-repeat center 2rem, 
+    linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), 
+    url(images/banner-girl.png) no-repeat center 2.5rem, 
     url(images/flower-bkgd.jpg) repeat-x center top;
-    background-size: 7.1em, contain;
+    background-size: cover, 6rem, contain;
+    height: 15rem;
 }
-
+.header-align {
+    padding: 0 auto;
+} 
 .collection{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: white;
-    padding-top: 100px;
-    margin: 0 auto;
+    position: relative;
+    margin-top: 3.5rem
+}
+.season{
+    font-size: 2.2rem;
+    color: white;
     position: relative;
 }
 .pf-bold {
@@ -215,22 +225,14 @@ li{
 .rw {
     font-family: 'Raleway Light'
 }
-.rwitalic {
+.rw-italic {
     font-family: 'Raleway Light Italic';
 }
-.rwmed {
+.rw-med {
     font-family: 'Raleway Medium';
 }
-.rwmeditalic {
+.rw-med-italic {
     font-family: 'Raleway Medium Italic';
-}
-
-.season{
-    font-size: 2rem;
-    color: white;
-    padding-bottom: 100px;
-    margin: 0 auto;
-    position: relative;
 }
 
 .clearfix:before,
@@ -258,18 +260,18 @@ li{
     margin-bottom: 8px;
     color: white;
 }
+
 /*Input*/
 
-input[type="text"] {
+input[type="email"] {
     padding: .5rem .2rem;
     width: 100%;
     border-radius: 3rem;
+    position: relative;
 }
 
 input[type="submit"] {
-    text-align: center;
-    /*background-color: #e2574c;*/
-    background-color: magenta;
+    background-color: #e2574c;
     color: white;
     position: absolute;
     padding: .1rem .75rem;
