@@ -144,6 +144,10 @@ body, button, input, select, textarea {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair', 'Raleway Light', sans-serif;
 }
+h3 {
+    color: #e2574c;
+    font-size: 1.5rem;
+}
 form {
     display: block;
     position: relative;
@@ -205,7 +209,7 @@ li{
     position: relative;
     margin-top: 3.5rem
 }
-.season{
+.season {
     font-size: 2.2rem;
     color: white;
     position: relative;
