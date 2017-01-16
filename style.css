@@ -131,7 +131,6 @@ html {
 
 }
 body, button, input, select, textarea {
-    max-width: 480px;
     margin: 0 auto;
     color: #2d2d2d;
     font-family: 'Raleway Light', sans-serif;
@@ -145,6 +144,9 @@ body, button, input, select, textarea {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair', 'Raleway Light', sans-serif;
 }
+div {
+    display: block;
+}
 h3 {
     color: #e2574c;
     font-size: 1.5rem;
@@ -153,11 +155,13 @@ form {
     display: block;
     position: relative;
 }
-footer, a {
-    text-align: center;
-    margin: auto 0;
+footer{
+    display: inline-block;
+    padding: 4rem 0;
+    text-align: left;
     background-color: #242424;
-    color: white
+    color: white;
+    width: 100%;
 }
 section {
     padding: 3rem 0;
@@ -166,14 +170,19 @@ h2 {
     font-size: 2.5rem;
 }
 header {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding: 1.5rem;
+    max-width: 1240px;
+    margin: 0 3rem;
+}
+ul{
+    list-style: none;
 }
 li{
-    display: block;
-    text-align: center;
+    display: inline-block;
     margin: 0 auto;
     list-style-type: square center;
+    width: 20%;
+    padding: 1rem;
 }
 
 /*Classes*/
@@ -182,26 +191,27 @@ li{
     margin: 0 auto;
     width: 100%;
 }
-
+.container2 {
+    margin: 0 2rem;
+}
 .alohalogo {
     float: left;
-    width: 24%;
+    width: 160px;
 }
 .shopbutton {
     float: right;
-    width: 10%;
+    width: 62px;
 }
 .banner {
-    overflow: hidden;
     background: 
     linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), 
     url(images/banner-girl.png) no-repeat center 3rem, 
     url(images/flower-bkgd.jpg) repeat-x center top;
-    background-size: cover, 10rem, cover;
-    height: 20rem;
+    background-size: cover, 16rem, contain;
+    height: 27rem;
 }
-.header-align {
-    padding-top: 6rem;
+.banner-align {
+    padding-top: 9rem;
 } 
 .collection, .season {
     font-weight: bold;
@@ -210,9 +220,12 @@ li{
 }
 .collection{
     font-size: 1.25rem;
+    text-transform: uppercase;
+    text-shadow: black 0 2px;
 }
 .season {
-    font-size: 2.5rem;
+    font-size: 4rem;
+    text-shadow: black 0 2px;
 }
 .pf-bold {
     font-family: 'Playfair Bold'
@@ -257,18 +270,61 @@ li{
     color: grey;
     font-weight: bold;
 }
-.sign-up-wrapper {
-    text-align: center;
+
+.resize {
+    width: 80%;
 }
 .sign-up-form {
-    display: block;
+    display: inline-block;
     margin: 1rem auto 0;
-    position: relative;
-    width: 80%
+    width: 80%;
+}
+.sign-up-wrapper {
+    width: 720px;
+}
+.footer-text {
+    margin: 0 auto;
+    padding: 0 4rem;
+    float: left;
+    width: 30%;
+}
+.copyright {
+    margin-bottom: 1.3rem;
+}
+.contact {
+    margin-bottom: 1.3rem;
+}
+.address {
+    color: #969696;
+}
+.footer-icons {
+    margin: 0 auto;
+    padding: 0 4rem;
+    width: 5rem;
+    display: block;
+}
+.footer-social {
+    text-align: left;
+    float: right;
+    display: block;
+    width: 40%;
+}
+.fa {
+    min-width: 1.6rem;
 }
 .footer-social li {
-    display: inline-block;
-    padding: 0.4rem;
+    display: block;
+    padding: .3rem;
+    width: 30%
+}
+.footer-social p {
+    display: inline;
+}
+.aloha-email {
+    color: white;
+}
+a:hover {
+    color: #b64036
 }
 .waves {
     background: url(images/wave-bkgd.jpg) no-repeat center bottom;
@@ -280,13 +336,12 @@ li{
 
 input[type="email"] {
     text-align: left;
-    padding: .5rem .2rem;
-    width: 100%;
+    padding: .5rem 2rem;
+    width: 75%;
     border-radius: 3rem;
 }
-
-input[name="email"] {
-    padding-right: 4rem;
+input[value="Your Email"] {
+    color: #969696;
 }
 
 input[type="submit"] {
@@ -296,6 +351,6 @@ input[type="submit"] {
     padding: .1rem .75rem;
     border: solid;
     border-radius: 3rem;
-    right: .1rem;
+    right: 3rem;
     top: .2rem;
 }

@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-    <meta charset="UTF-8">
-        <body>
-            <head>
+        <head>  
+            <meta charset="UTF-8">
                 <script src="https://use.fontawesome.com/c0922c38ac.js"></script>
                     <title>Aloha Apparel</title>
                         <link rel="stylesheet" href="reset.css">
                             <link rel="stylesheet" href="style.css">
-            </head>
-
-            <header class= "clearfix" >
+</head>
+<body>
+            <header class= "clearfix">
                 <img class="alohalogo" src="./images/aloha-logo.svg" alt="Aloha Apparel">
                     <img class="shopbutton" src="./images/cart-icon.svg" alt="Add to Cart">
             </header>
 
             <section class= "banner" >
-                <div class="header-align">
+                <div class="banner-align">
                     <p class="collection">New Collection</p>
                         <p class="season">Spring/Summer 2017</p>
                 </div>    
             </section>
     <section>
+        <div class="sign-up-wrapper container">
         <h2 class="pf-italic">Hand-Crafted <span class="pf-bold">Styles</span></h2>
             <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. 
                 Browse our current selection of products or sign-up for updates below.</p>
+                </div>
     </section>
     <section class="merch">
-    <h2><span class="pf-italic">Most-Loved</span><span class="pf-bold"> Products</span></h2>
+        <div class="container">
+            <h2><span class="pf-italic">Most-Loved</span><span class="pf-bold"> Products</span></h2>
         <ul>
             <li>
                 <img class="resize" src="./images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
@@ -40,18 +42,19 @@
                     <p class="price">$89.00</p>
             </li>
             <li>
-                <img src="./images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
+                <img class="resize" src="./images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
                     <p class="product-name">Dresses</p>
                         <h3>Checked Stretch Dress</h3>
                     <p class="price">$129.00</p>
             </li>
             <li>
-                <img src="./images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
+                <img class="resize" src="./images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
                     <p class="product-type">Backpacks</p>
                         <h3>Blue Hipster Backpack</h3>
                     <p class="price">$69.00</p>
             </li>   
         </ul>
+        </div>
        </section> 
     <section class="waves">
         <div class="sign-up-wrapper container">
@@ -64,17 +67,29 @@
             </form>        
          </div>
     </section>
-        <footer>
-        <p>© 2016 Aloha Apparel Co.Powered by HTML and CSS.</p>
-            <p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a>
-                <p>1490 W Broadway Vancouver, B.C., Canada</p>    
+        <footer class="clearfix">
+        <div class="container2">
+        <div class="footer-text">    
+        <p>© 2016 Aloha Apparel Co.</p>
+        <p class="copyright">Powered by HTML and CSS.</p>
+            <p class="contact">604-604-6040. <a class="aloha-email" href="mailto:info@alohaapparel.com">
+                                 info@alohaapparel.com</a>
+                <p class="address">1490 W Broadway</p>
+                 <p class="address">Vancouver, B.C., Canada</p> 
+                </div>  
                 <ul class="footer-social">
-                    <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                                <li><i class="fa fa-pinterest" aria-hidden="true"></i></li>
-                                    <li><i class="fa fa-google-plus" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-facebook" aria-hidden="true"></i>
+                    <p>Facebook</p></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i>
+                        <p>Twitter</p></li>
+                            <li><i class="fa fa-instagram" aria-hidden="true"></i>
+                            <p>Instagram</p></li>
+                                <li><i class="fa fa-pinterest" aria-hidden="true"></i>
+                                <p>Pinterest</p></li>
+                                    <li><i class="fa fa-google-plus" aria-hidden="true"></i>
+                                    <p>Google Plus</p></li>
                 </ul>
+                </div>
         </footer>
     </body>
 </html>
