@@ -1,18 +1,18 @@
- # Aloha, Friend!
- 
- ![Aloha Website Screenshot](/aloha-screenshot.png))
+ # Aloha, Friend! #
 
- ## Project Summary
+ ![Aloha Website Screenshot](/aloha-screenshot.png)
+
+ ## Project Summary ##
 
  The Aloha Homepage Project tasked us with developing a homepage for our client, 
  Aloha Apparel Co. Part 1 of the project focused on building out the HTML and CSS
  components of this responsive website.
 
- ## Technology
+ ## Technology ##
  
  HTML, CSS, Git/GitHub, Terminal/Command Line
 
- ## Personal Learning
+ ## Personal Learning ##
 
  The objective learnings of this project were simply HTML and CSS. As these skills became
  familiar I began to understand the interworkings of the code including semantics,
