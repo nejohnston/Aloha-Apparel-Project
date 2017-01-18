@@ -127,7 +127,7 @@ table {
 /*Elements*/
 
 html {
-    font-size: 16px;
+    font-size: 14px;
 
 }
 body, button, input, select, textarea {
@@ -141,27 +141,20 @@ body, button, input, select, textarea {
     border: 0;
     text-align: center;
 }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair', 'Raleway Light', sans-serif;
-}
-div {
-    display: block;
 }
 h3 {
     color: #e2574c;
     font-size: 1.5rem;
 }
-form {
-    display: block;
-    position: relative;
-}
 footer{
     display: flex;
-    padding: 4rem 0;
-    text-align: left;
+    flex-direction: column;
+    justify-content: center;
     background-color: #242424;
     color: white;
-    width: 100%;
 }
 section {
     padding: 3rem 0;
@@ -169,52 +162,51 @@ section {
 h2 {
     font-size: 2.5rem;
 }
-header {
-    display: flex;
-    max-width: 1240px;
-    margin: 0 3rem;
-    justify-content: space-between;
-}
+
 ul{
     list-style: none;
-    display: inline-flex;
-}
-li{
-    margin: 0 auto;
-    list-style-type: square center;
-    width: 10%;
-    padding: 1rem;
 }
 
 /*Classes*/
+.menu {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    order: 1;
+    width: 70%;
+    text-decoration: none;
+}
 
+a {
+    text-decoration: none;
+    color: #e2574c;
+}
 .container {
     margin: 0 auto;
-    width: 100%;
 }
-.container li {
-    width: 15%;
-}
-.container2 {
-    margin: 0 2rem;
+.logos {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    border-bottom: 1px solid gray;
 }
 .alohalogo {
-    width: 160px;
+    width: 130px;
 }
 .shopbutton {
     width: 62px;
 }
 .banner {
+    display: flex;
+    justify-content: center;
     background: 
     linear-gradient( to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%), 
     url(images/banner-girl.png) no-repeat center 3rem, 
     url(images/flower-bkgd.jpg) repeat-x center top;
-    background-size: cover, 16rem, contain;
-    height: 27rem;
+    background-size: cover, 10rem, contain;
+    height: 12rem;
+    overflow: hidden;
 }
-.banner-align {
-    padding-top: 9rem;
-} 
 .collection, .season {
     font-weight: bold;
     color: white;
@@ -226,7 +218,7 @@ li{
     text-shadow: black 0 2px;
 }
 .season {
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: black 0 2px;
 }
 .pf-bold {
@@ -266,21 +258,19 @@ li{
     color: grey;
     font-weight: bold;
 }
-.resize {
-    width: 90%;
-}
 .sign-up-form {
-    display: inline-block;
-    margin: 1rem auto 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
     width: 80%;
 }
-.sign-up-wrapper {
-    width: 720px;
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.footer-text {
-    margin: 0 auto;
-    padding: 0 4rem;
-    width: 30%;
+.footer-social li {
+    padding: 0 .5rem;
 }
 .copyright {
     margin-bottom: 1.3rem;
@@ -290,27 +280,6 @@ li{
 }
 .address {
     color: #969696;
-}
-.footer-icons {
-    margin: 0 auto;
-    padding: 0 2rem;
-    width: 3rem;
-    display: block;
-}
-.footer-social {
-    text-align: left;
-    display: block;
-    width: 40%;
-}
-.fa {
-    min-width: 1.6rem;
-}
-.footer-social li {
-    padding: .3rem;
-    width: 30%
-}
-.footer-social p {
-    display: inline;
 }
 .aloha-email {
     color: white;
@@ -327,10 +296,12 @@ a:hover {
 /*Input*/
 
 input[type="email"] {
+    display: inline-flex;
+    align-self: center;
     text-align: left;
-    padding: .5rem 2rem;
-    width: 75%;
-    border-radius: 3rem;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    width: 70vh;
 }
 input[value="Your Email"] {
     color: #969696;
@@ -339,10 +310,11 @@ input[value="Your Email"] {
 input[type="submit"] {
     background-color: #e2574c;
     color: white;
-    position: absolute;
     padding: .1rem .75rem;
+    margin: 2rem;
     border: solid;
     border-radius: 3rem;
-    right: 3rem;
-    top: .2rem;
+    top: -1.9em;
+    left: 14.6em;
+    align-self: flex-end;
 }
