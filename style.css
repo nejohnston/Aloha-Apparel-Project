@@ -161,8 +161,10 @@
         padding: 3rem 0;
     }
     h1 {
+        font-family: 'Playfair Italic Light';
         font-size: 2.5rem;
     }
+
     h2 {
         font-size: 2rem;
     }
@@ -182,6 +184,9 @@
         justify-content: space-around;
         order: 1;
         width: 70%;
+        padding: 0.5rem;
+        border-top: 1px solid gray;
+        border-height: 90vw;
     }
 
     a {
@@ -193,7 +198,6 @@
         justify-content: space-between;
         height: 6rem;
         padding: 0 1rem;
-        border-bottom: 1px solid gray;
     }
     .alohalogo {
         width: 130px;
@@ -227,28 +231,55 @@
         text-shadow: black 0 2px;
     }
     .pf-bold {
-        font-family: 'Playfair Bold'
+        font-family: 'Playfair Bold', sans-serif;
     }
     .pf-italic {
-        font-family: 'Playfair Italic';  
+        font-family: 'Playfair Italic', sans-serif;  
     }
     .pf-bold-italic {
-        font-family: 'Playfair Bold Italic';
+        font-family: 'Playfair Bold Italic', sans-serif;
     }
     .pf {
-        font-family: 'Playfair'
+        font-family: 'Playfair', sans-serif;
     }
     .rw {
-        font-family: 'Raleway Light'
+        font-family: 'Raleway Light', sans-serif
     }
     .rw-italic {
-        font-family: 'Raleway Light Italic';
+        font-family: 'Raleway Light Italic', sans-serif;
     }
     .rw-med {
-        font-family: 'Raleway Medium';
+        font-family: 'Raleway Medium', sans-serif;
     }
     .rw-med-italic {
-        font-family: 'Raleway Medium Italic';
+        font-family: 'Raleway Medium Italic', sans-serif;
+    }
+    .mens-content {
+        width: 100vw;
+    }
+    .trends-content {
+        width: 49.2vw;
+        padding-right: 0.8vw;
+    }
+    .glasses-content {
+        width: 49.2vw;
+        padding-left: 0.8vw;
+    }
+    .sale-content {
+        width: 49.2vw;
+        padding-right: 0.8vw
+    }
+    .bags-content {
+        width: 49.2vw;
+        padding-left: 0.8vw;
+    }
+    .womens-content {
+        width: 100vw;
+    }
+    .categories {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: stretch;
     }
     .merch {
         border-top: 1px solid gray;
@@ -263,12 +294,7 @@
         color: grey;
         font-weight: bold;
     }
-    .sign-up-form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-content: center;
-    }
+    
     .footer-social {
         display: flex;
         flex-direction: row;
@@ -299,8 +325,9 @@
     }
     .waves {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         justify-content: space-around;
+        align-items: center;
         background: url(images/wave-bkgd.jpg) no-repeat center bottom;
         margin-bottom: 8px;
         color: white;
@@ -309,7 +336,6 @@
     /*Input*/
 
     input[type="email"] {
-        align-self: center;
         text-align: left;
         padding: 0.5rem 0 0.5rem 1rem;
         border-radius: 4rem;
@@ -317,13 +343,15 @@
     }
     input[value="Your Email"] {
         color: #969696;
+        font-family: 'Railway Light', sans-serif;
     }
 
     input[type="submit"] {
         background-color: #e2574c;
         color: white;
         border-radius: 3rem;
-        position: absolute;
-        right: 0.5rem;
         padding: 0 auto;
+        position: absolute;
+        right: 0.7rem;
+        bottom: 0.35rem;
     }
