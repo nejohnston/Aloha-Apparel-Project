@@ -37,3 +37,6 @@ including text-styling, banner-heights, and ill-conceived white space. Although 
 my footer and header, I fell short on the content in between, especially with implementing
 smooth scrolling, consistent section heights, and fundamental components such as browser
 compatibilities and website accessibility.
+
+I swear my Subscribe button has a mind of its own. My worst enemy, I had it, then I didn't, then
+had it again, then not. Halp me pls1!!!!!!!
