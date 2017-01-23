@@ -1,6 +1,11 @@
-$(document).ready(function(e){
-    e.preventDefault();
-    $('.submit').on('click', '.button', function(){
-
-    });
+$(function() {
+    $('.carousel').flickity({
+    cellAlign: 'center',
+    contain: true,
+    percentPostition: true,
+    imagesLoaded: true,
+    autoPlay: true,
+    prevNexButtons: false
 });
+})
+
