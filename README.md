@@ -1,27 +1,39 @@
- #Aloha, Friend!#
+ ##Aloha, Friend!
 
- ![Aloha Website Screenshot](/aloha-screenshot.png)
+ ![Aloha Website Screenshot](./aloha-screenshot-pt2-1)
 
- ##Project Summary##
+ #Project Summary
 
  The Aloha Homepage Project tasked us with developing a homepage for our client, 
- Aloha Apparel Co. Part 1 of the project focused on building out the HTML and CSS
- components of this responsive website.
+ Aloha Apparel Co. Part 2 of the project focused on building upon our HTML and CSS, starting
+ with a Mobile-First foundation. Our main goal was to build a responsive website, from mobile, 
+ to tablet, to desktop. Also, implementing Javascript components to make it look purdy.
 
- ##Technology##
+ #Technology
  
- HTML, CSS, Git/GitHub, Terminal/Command Line
+ Flickity, jQuery, Javascript, HTML, CSS, Git/GitHub, Terminal/Command Line
 
- ##Personal Learning##
+ ![Aloha Carousel Screenshot](./aloha-screenshot-pt2-4)
 
- The objective learnings of this project were simply HTML and CSS. As these skills became
- familiar I began to understand the interworkings of the code including semantics,
- inheritance, specificity. By the end of the project I was manipulating the theoretical to
- aid my code's efficiency. 
+ #Personal Learning
 
- For example, getting the social media icons and their corresponding text inline was a
- major pain because of inheritance. The text was not inline because it was inheriting 
- a "text-align: center" tag from my defined "li" element. To fix this I removed the tag
- from "li", adding it to my "body" element so the "li" that needed the "text-align" would 
- inherit it, then I aligned the social media names with a "text-align" in the class I 
- defined for them. This is a demonstration of, not only inheritance, specificity too!
+ The objective learnings of this project were geared towards a mobile-first approach meanwhile 
+ implementing Javascript components. From desktop to mobile-first, then back again, was not a
+ minor task, but beneficial nonetheless. Having a compartmental foundation was incredible 
+ beneficial especially when we were pushed to remove floats from the first part of our project
+ and implement the flexbox technique. 
+
+ For example, building a responsive header was a major hurdle. Manipulating both text and images
+ using floats would have been nigh impossible to do. Instead, having the three components, logo, 
+ navigation bar, and cart icon, in compartments made it (relatively) easy.
+
+ ![Reflexive Categories](./aloha-screenshot-pt2-4)
+
+#Improvements
+
+This project I fell short on major requirements. I struggled with implementing javascript when I
+felt I should have been able. Furthermore, there were stylistic components that I missed 
+including text-styling, banner-heights, and ill-conceived white space. Although I was proud of 
+my footer and header, I fell short on the content in between, especially with implementing
+smooth scrolling, consistent section heights, and fundamental components such as browser
+compatibilities and website accessibility.
