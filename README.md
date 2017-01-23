@@ -1,6 +1,6 @@
  ##Aloha, Friend
 
- ![Aloha Website Screenshot](/aloha-screenshot-pt2-1)
+ ![Aloha Website Screenshot](/my-aloha-screenshots/aloha-screenshot-pt2-1)
 
  #Project Summary
 
@@ -13,7 +13,7 @@
  
  Flickity, jQuery, Javascript, HTML, CSS, Git/GitHub, Terminal/Command Line
 
- ![Aloha Carousel Screenshot](/aloha-screenshot-pt2-4)
+ ![Aloha Carousel Screenshot](/my-aloha-screenshots/aloha-screenshot-pt2-4)
 
  #Personal Learning
 
@@ -27,7 +27,7 @@
  using floats would have been nigh impossible to do. Instead, having the three components, logo, 
  navigation bar, and cart icon, in compartments made it (relatively) easy.
 
- ![Reflexive Categories](/aloha-screenshot-pt2-4)
+ ![Reflexive Categories](/my-aloha-screenshots/aloha-screenshot-pt2-4)
 
 #Improvements
 
