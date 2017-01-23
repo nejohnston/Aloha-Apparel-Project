@@ -1,4 +1,4 @@
- ##Aloha, Friend!
+ ##Aloha, Friend
 
  ![Aloha Website Screenshot](/aloha-screenshot-pt2-1)
 
