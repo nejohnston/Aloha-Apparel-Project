@@ -7,22 +7,17 @@ $(document).ready(function() {
     autoPlay: true,
     prevNexButtons: false
 });
-})
-
-$(function scrollNav() {
-$('#nav a').click(function(){  
-  //Toggle Class
-  debugger;
-  $(".first-scroll").removeClass("first-scroll");      
-  $(this).closest('li').addClass("first-scroll");
-  var theClass = $(this).attr("first-scroll");
-  $('.'+theClass).parent('li').addClass('first-scroll');
-  //Animate
-  $('html, body').stop().animate({
-      scrollTop: $( $(this).attr('href') ).offset().top - 160
-  }, 4000);
-  return false;
 });
-$('.scrollTop a').scrollTop();
-}
-,scrollNav())
+
+$('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
