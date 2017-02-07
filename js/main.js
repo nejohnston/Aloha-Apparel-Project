@@ -1,11 +1,12 @@
 $(document).ready(function() {
-    $('.carousel').flickity({
-    cellAlign: 'center',
+    $('.flickity-carousel').flickity({
+    cellAlign: 'left',
     contain: true,
-    percentPostition: true,
+    percentPosition: false,
     imagesLoaded: true,
-    autoPlay: true,
-    prevNexButtons: false
+    autoPlay: false,
+    prevNextButtons: false,
+    resize: true,
 });
 });
 
