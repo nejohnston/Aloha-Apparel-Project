@@ -172,6 +172,7 @@ div, nav {
 .header-wrap {
 background: #ffffff;
 border-bottom-color: #969696;
+border-bottom-width: 3px;
 position: fixed;
 width: 100%;
 top: 0;
