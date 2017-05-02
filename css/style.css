@@ -180,7 +180,6 @@ div, nav {
     top: 0;
     left: 0;
     z-index: 1337;
-    margin-bottom: 2rem;
 }
 .header-wrap-inner {
     display: flex;
