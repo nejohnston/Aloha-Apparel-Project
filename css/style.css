@@ -150,9 +150,11 @@ div, nav {
 }
 
 /*Universal Classes*/
+
 .container {
     padding: 0 2%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
 }
 @media only screen and (min-width: 1240px) {
@@ -170,21 +172,22 @@ div, nav {
 /*Header Section*/
 
 .header-wrap {
-background: #ffffff;
-border-bottom-color: #969696;
-border-bottom-width: 3px;
-position: fixed;
-width: 100%;
-top: 0;
-left: 0;
-z-index: 1337;
+    background: #ffffff;
+    border-bottom-color: #969696;
+    border-bottom-width: 3px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1337;
+    margin-bottom: 2rem;
 }
 .header-wrap-inner {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-padding-bottom: .5rem;
-padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+    margin-top: 1rem;
 }
 .main-navigation {
     align-self: center;
@@ -192,18 +195,18 @@ padding-top: 1rem;
     display: inline-block
 }
 .main-navigation ul {
-border-top: 1px solid gray;
-padding-top: 0.5rem;
+    border-top: 1px solid gray;
+    padding-top: 0.5rem;
 }
 .main-navigation li {
-display: inline-block;
-text-align: center;
-margin: 0 1rem;
+    display: inline-block;
+    text-align: center;
+    margin: 0 1rem;
 }
 .main-navigation li a {
-color: #e2574c;
-font-weight: bold;
-text-transform: uppercase;
+    color: #e2574c;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 @media only screen and (min-width: 600px) {
     .main-navigation {
@@ -220,7 +223,7 @@ text-transform: uppercase;
 }
 .logo img {
     align-self: flex-start;
-    height: auto;
+    max-height: 61px;
     max-width: 120px;
 }
 @media only screen and (min-width: 600px) {
@@ -230,11 +233,11 @@ text-transform: uppercase;
     }
 }
 .shop-button {
-align-self: flex-end;
-cursor: pointer;
-flex: 0 1 50%;
-text-align: right;
-max-width: 100%;
+    align-self: flex-end;
+    cursor: pointer;
+    flex: 0 1 50%;
+    text-align: right;
+    max-width: 100%;
 }
 .shop-button img{
     max-width: 50px;
@@ -246,15 +249,9 @@ max-width: 100%;
         flex-basis: 20%;
     }
 }
-@media only screen and (min-width: 1240px) {
-    .shop-button img {
-        max-width: 60px;
-    }
-    .logo img {
-        max-width: 180px
-    }
-}
+
 /*Banner Section*/
+
 .banner {
     display: flex;
     justify-content: center;
@@ -263,10 +260,10 @@ max-width: 100%;
     rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%),
     url(../images/banner-girl.png) no-repeat center 3rem,
     url(../images/flower-bkgd.jpg) repeat-x center top;
-    background-size: cover, 10rem, cover;
+    background-size: cover, contain;
     height: 25rem;
     overflow: hidden;
-    margin-top: 90px;
+    padding-top: 90px;
 }
     .banner-text {
     font-weight: bold;
@@ -286,64 +283,65 @@ max-width: 100%;
     font-family: "Playfair Display Web", sans-serif;
 }
 /*Category Section*/
+
 .category-wrapper {
-padding: 0;
+    padding: 0;
 }
 .wrapper {
-background: linear-gradient( to bottom, rgba(0,0,0,0.25)
-0%, rgba(0,0,0,0.25) 100%);
-display: flex;
-justify-content: center;
-align-items: center;
+    background: linear-gradient( to bottom, rgba(0,0,0,0.25)
+    0%, rgba(0,0,0,0.25) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 .categories{
-display:flex;
-flex-flow:row wrap;
-box-sizing: border-box;
+    display:flex;
+    flex-flow:row wrap;
+    box-sizing: border-box;
 }
 .rectangle img {
-width: 100%;
-width: 100%;
+    width: 100%;
+    width: 100%;
 }
 .square img {
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .rectangle {
-border: 4px solid white;
-width: 100%;
-flex: 2 0 100%;
+    border: 4px solid white;
+    width: 100%;
+    flex: 2 0 100%;
 }
 .square {
-width: 50%;
-flex: 1 0 50%;
-border: 4px solid white;
+    width: 50%;
+    flex: 1 0 50%;
+    border: 4px solid white;
 }
 @media only screen and (min-width: 600px) {
 .rectangle {
-border: 4px solid white;
-width: 50%;
-flex: 2 0 50%;
+    border: 4px solid white;
+    width: 50%;
+    flex: 2 0 50%;
 }
 .square {
-width: 25%;
-flex: 1 0 25%;
-border: 4px solid white;
+    width: 25%;
+    flex: 1 0 25%;
+    border: 4px solid white;
 }
 }
 
 .category-text{
-position:absolute;
-font-family:'Raleway Display Web';
-text-shadow: 2px 2px 4px
-rgba(100,100,100,0.8);
-font-style: normal;
-font-size:1.5rem;
-font-weight: bold;
-text-transform: uppercase;
-color: white;
-z-index:1;
+    position:absolute;
+    font-family:'Raleway Display Web';
+    text-shadow: 2px 2px 4px
+    rgba(100,100,100,0.8);
+    font-style: normal;
+    font-size:1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    z-index:1;
 }
 
 /*Merchandise Section*/
@@ -398,26 +396,27 @@ z-index:1;
 
 
 /*Subscribe Section*/
-    .waves {
+
+.waves {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
     background: url(../images/wave-bkgd.jpg)
-                no-repeat center bottom;
-    margin-bottom: 8px;
-    color: white;
-    }
-    .sign-up-header {
-        margin-bottom: 10px;
-    }
-    .subscribe-wrapper {
-    text-align: center;
-    }
-    .subscribe-form {
-        position: relative;
-        margin: 2em auto 0;
-    }
+            no-repeat center bottom;
+margin-bottom: 8px;
+color: white;
+}
+.sign-up-header {
+    margin-bottom: 10px;
+}
+.subscribe-wrapper {
+text-align: center;
+}
+.subscribe-form {
+    position: relative;
+    margin: 2em auto 0;
+}
 
 input[type="email"] {
     padding: 0.5rem 0 0.5rem 1rem;
@@ -453,9 +452,9 @@ input[value="Subscribe"] {
 /*Footer Section*/
 
 .site-footer {
-padding: 4rem 0;
-color: #fff;
-text-align: center;
+    padding: 4rem 0;
+    color: #fff;
+    text-align: center;
 }
 @media only screen and (min-width: 600px) {
     .site-footer .container{
